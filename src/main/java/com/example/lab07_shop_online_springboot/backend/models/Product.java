@@ -1,5 +1,6 @@
 package com.example.lab07_shop_online_springboot.backend.models;
 
+import com.example.lab07_shop_online_springboot.backend.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
@@ -22,6 +23,8 @@ public class Product {
     private String description;
     private String unit;
     private String manufacturer_name;
+    @Enumerated(EnumType.STRING)
+    private ProductStatus status;
 
     @OneToMany(mappedBy = "product")
     private List<ProductImage> images;

@@ -1,9 +1,7 @@
 package com.example.lab07_shop_online_springboot.backend.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.example.lab07_shop_online_springboot.backend.enums.EmployeeStatus;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +25,7 @@ public class Employee {
     private String email;
     private String phone;
     private String address;
-
+    @Enumerated(EnumType.STRING)
+    private EmployeeStatus status;
 
 }
