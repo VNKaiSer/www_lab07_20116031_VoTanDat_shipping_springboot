@@ -6,20 +6,12 @@ Subject: Lập trình WWW với công nghệ JAVA
 
 ## Description:
 
-Bài tập lab02 week2-3
+Bài tập lab07 week7
 
-Yêu cầu: Viết RESTAPI bằng serverlet(JakartaEE) và có frontend
+Yêu cầu: Viết web kinh doanh bằng springMVC
 
 ## 1. Kiến trúc dự án
-
-![Alt text](./images/kientruc.png)
-
-- Mô hình: Client - Server
-- Server:
-- ![img.png](images/backend.png)
-- Client:
-- ![img.png](images/frontend.png)
-- Client sử dụng jsp và tailwindcss
+SPRING MVC
 ## 2. ERD
 ![img_1.png](images/erd.png)
 ## 3. Cơ sở dữ liệu
